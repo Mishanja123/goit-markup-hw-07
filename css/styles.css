@@ -739,6 +739,7 @@ fill: var(--white-color);
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 16px;
+    outline: none;
 }
 
 .order-form-comment::placeholder {
