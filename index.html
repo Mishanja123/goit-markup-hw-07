@@ -20,12 +20,31 @@
   </head>
 
   <body>
-    <!--Header-->
+    <!-- Header -->
     <header class="header">
       <div class="header-container container">
         <a class="logo" href="./index.html"
           >web<span class="logo-dark">studio</span></a
         >
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -57,10 +76,10 @@
     </header>
 
     <main>
-      <!--Order-->
-      <section class="order">
+      <!-- Order -->
+      <section class="section order">
         <div class="order-box container">
-          <h1 class="heading-primary order-h">
+          <h1 class="heading-primary">
             Effective Solutions<br />
             for Your Business
           </h1>
@@ -71,15 +90,15 @@
       </section>
 
       <!--About-->
-      <section class="about">
+      <section class="section about">
         <div class="container">
-          <h2 hidden class="heading-secondary">features</h2>
+          <h2 hidden class="heading-mtd">features</h2>
           <ul class="about-list card-set">
             <li class="about-item card-set-item">
               <svg class="about-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
-              <h3 class="heading-tertiary">Strategy</h3>
+              <h3 class="heading-mtd">Strategy</h3>
               <p class="paragraph">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -89,7 +108,7 @@
               <svg class="about-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
-              <h3 class="heading-tertiary">Punctuality</h3>
+              <h3 class="heading-mtd">Punctuality</h3>
               <p class="paragraph">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -99,7 +118,7 @@
               <svg class="about-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
-              <h3 class="heading-tertiary">Diligence</h3>
+              <h3 class="heading-mtd">Diligence</h3>
               <p class="paragraph">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -109,7 +128,7 @@
               <svg class="about-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
-              <h3 class="heading-tertiary">Technologies</h3>
+              <h3 class="heading-mtd">Technologies</h3>
               <p class="paragraph">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -120,7 +139,7 @@
       </section>
 
       <!--What are we doing-->
-      <section class="doing">
+      <section class="section doing">
         <div class="container">
           <h2 class="heading-secondary">What are we doing</h2>
           <ul class="doing-list card-set">
@@ -155,8 +174,8 @@
         </div>
       </section>
 
-      <!--Team-->
-      <section class="team">
+      <!-- Team -->
+      <section class="section team">
         <div class="container">
           <h2 class="heading-secondary">Our Team</h2>
           <ul class="team-list card-set">
@@ -424,12 +443,12 @@
         </div>
       </section>
 
-      <!--Customers-->
-      <section class="customers">
+      <!-- Customers -->
+      <section class="section customers">
         <div class="container">
           <h2 class="heading-secondary">Customers</h2>
-          <ul class="customers-list list">
-            <li class="customers-item">
+          <ul class="customers-list list card-set">
+            <li class="customers-item card-set-item">
               <a
                 class="customers-link link"
                 href="#"
@@ -441,7 +460,7 @@
                   <use href="./images/icons.svg#icon-logo-1"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item card-set-item">
               <a
                 class="customers-link link"
                 href="#"
@@ -453,7 +472,7 @@
                   <use href="./images/icons.svg#icon-logo-2"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item card-set-item">
               <a
                 class="customers-link link"
                 href="#"
@@ -465,7 +484,7 @@
                   <use href="./images/icons.svg#icon-logo-3"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item card-set-item">
               <a
                 class="customers-link link"
                 href="#"
@@ -477,7 +496,7 @@
                   <use href="./images/icons.svg#icon-logo-4"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item card-set-item">
               <a
                 class="customers-link link"
                 href="#"
@@ -489,7 +508,7 @@
                   <use href="./images/icons.svg#icon-logo-5"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item card-set-item">
               <a
                 class="customers-link link"
                 href="#"
@@ -506,7 +525,7 @@
       </section>
     </main>
 
-    <!--footer-->
+    <!-- footer -->
     <footer class="footer">
       <div class="footer-wrapper container">
         <div class="footer-box">
@@ -597,7 +616,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -678,6 +697,98 @@
       </div>
     </div>
 
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-btn js-close-menu">
+        <svg class="" width="24" height="24">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link link">About</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="contact-mobile-list">
+        <li class="contact-mobile-item">
+          <a class="contact-mobile-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="contact-mobile-item">
+          <a class="contact-mail-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://twitter.com/"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://www.facebook.com/"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://www.linkedin.com/"
+            aria-label="Linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
