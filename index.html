@@ -31,18 +31,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="mob_menu" width="32" height="28">
+            <use href="./images/icons.svg#icon-mob_menu"></use>
           </svg>
         </button>
         <nav class="navigation">
@@ -144,31 +134,62 @@
           <h2 class="heading-secondary">What are we doing</h2>
           <ul class="doing-list card-set">
             <li class="doing-item card-set-item">
-              <img
-                src="./images/hero.images/monitor.jpg"
-                alt="monitor"
-                width="360"
-                height="300"
-                class="doing-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/hero.images/doing/monitor_desk@1x.webp 1x,
+                    ./images/hero.images/doing/monitor_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/hero.images/doing/monitor_desk@1x.jpg"
+                  alt="monitor"
+                  width="360"
+                  height="300"
+                  class="doing-img"
+                />
+              </picture>
             </li>
             <li class="doing-item card-set-item">
-              <img
-                src="./images/hero.images/phone.jpg"
-                alt="phone"
-                width="360"
-                height="300"
-                class="doing-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/hero.images/doing/phone_desk@1x.webp 1x,
+                    ./images/hero.images/doing/phone_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  src="./images/hero.images/doing/phone_desk@1x.jpg"
+                  alt="phone"
+                  width="360"
+                  height="300"
+                  class="doing-img"
+                />
+              </picture>
             </li>
             <li class="doing-item card-set-item">
-              <img
-                src="./images/hero.images/laptope.jpg"
-                alt="laptope"
-                width="360"
-                height="300"
-                class="doing-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/hero.images/doing/laptope_desk@1x.webp 1x,
+                    ./images/hero.images/doing/laptope_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/hero.images/doing/laptope_desk@1x.jpg"
+                  alt="laptope"
+                  width="360"
+                  height="300"
+                  class="doing-img"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -176,17 +197,44 @@
 
       <!-- Team -->
       <section class="section team">
-        <div class="container">
+        <div class="container t-container">
           <h2 class="heading-secondary">Our Team</h2>
           <ul class="team-list card-set">
             <li class="team-item card-set-item">
-              <img
-                src="./images/hero.images/mark.jpg"
-                alt="Mark"
-                width="264"
-                height="260"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/hero.images/team/mark_desk@1x.webp 1x,
+                    ./images/hero.images/team/mark_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/hero.images/team/mark_tab@1x.jpg 1x,
+                    ./images/hero.images/team/mark_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/hero.images/team/mark_mob@1x.jpg 1x,
+                    ./images/hero.images/team/mark_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/hero.images/team/mark_mob@1x.jpg"
+                  alt="Mark"
+                  width="264"
+                  height="260"
+                  class="team-img"
+                />
+              </picture>
+
               <div class="team-wrapper">
                 <h3 class="heading-tertiary">Mark Guerrero</h3>
                 <p class="paragraph">Product Designer</p>
@@ -245,13 +293,39 @@
               </div>
             </li>
             <li class="team-item card-set-item">
-              <img
-                src="./images/hero.images/tom.jpg"
-                alt="Tom"
-                width="264"
-                height="260"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/hero.images/team/tom_desk@1x.webp 1x,
+                    ./images/hero.images/team/tom_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/hero.images/team/tom_tab@1x.jpg 1x,
+                    ./images/hero.images/team/tom_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/hero.images/team/tom_mob@1x.jpg 1x,
+                    ./images/hero.images/team/tom_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/hero.images/team/tom_mob@1x.jpg"
+                  alt="Tom"
+                  width="264"
+                  height="260"
+                  class="team-img"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="heading-tertiary">Tom Ford</h3>
                 <p class="paragraph">Frontend Developer</p>
@@ -310,13 +384,39 @@
               </div>
             </li>
             <li class="team-item card-set-item">
-              <img
-                src="./images/hero.images/camila.jpg"
-                alt="Camila"
-                width="264"
-                height="260"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/hero.images/team/camila_desk@1x.webp 1x,
+                    ./images/hero.images/team/camila_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/hero.images/team/camila_tab@1x.jpg 1x,
+                    ./images/hero.images/team/camila_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/hero.images/team/camila_mob@1x.jpg 1x,
+                    ./images/hero.images/team/camila_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/hero.images/team/camila_mob@1x.jpg"
+                  alt="Camila"
+                  width="264"
+                  height="260"
+                  class="team-img"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="heading-tertiary">Camila Garcia</h3>
                 <p class="paragraph">Marketing</p>
@@ -375,13 +475,39 @@
               </div>
             </li>
             <li class="team-item card-set-item">
-              <img
-                src="./images/hero.images/daniel.jpg"
-                alt="Daniel"
-                width="264"
-                height="260"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/hero.images/team/daniel_desk@1x.webp 1x,
+                    ./images/hero.images/team/daniel_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/hero.images/team/daniel_tab@1x.jpg 1x,
+                    ./images/hero.images/team/daniel_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/hero.images/team/daniel_mob@1x.jpg 1x,
+                    ./images/hero.images/team/daniel_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/hero.images/team/daniel_mob@1x.jpg"
+                  alt="Daniel"
+                  width="264"
+                  height="260"
+                  class="team-img"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="heading-tertiary">Daniel Wilson</h3>
                 <p class="paragraph">UI Designer</p>
@@ -707,10 +833,10 @@
 
       <ul class="mobile-menu-list list">
         <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link link">About</a>
+          <a href="./index.html" class="mobile-menu-link link">Studio</a>
         </li>
         <li class="mobile-menu-item">
-          <a href="#" class="mobile-menu-link link">Portfolio</a>
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
         </li>
         <li class="mobile-menu-item">
           <a href="#" class="mobile-menu-link link">Contacts</a>
