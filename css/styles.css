@@ -399,7 +399,7 @@ p {
     .navigation-link.current::after {
         content: "";
         position: absolute;
-        bottom: -1px;
+        bottom: -2px;
 
 
         display: block;
