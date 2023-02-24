@@ -57,7 +57,7 @@ p {
 .container {
     /* phone screen */
     min-width: 320px;
-    max-width: 480px;
+    max-width: 428px;
     padding: 0 16px;
     margin-left: auto;
     margin-right: auto;
@@ -68,7 +68,7 @@ p {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 736px;
+        max-width: 768px;
     }
 }
 
@@ -197,7 +197,7 @@ p {
     order: 1;
     color: var(--text-color);
     margin-top: 8px;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -206,6 +206,19 @@ p {
 }
 @media screen and (min-width: 1200px) {
     .paragraph {
+        font-weight: 400;
+    }
+}
+
+.paragraph-team {
+    margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+    .paragraph-team {}
+}
+
+@media screen and (min-width: 1200px) {
+    .paragraph-team {
         font-weight: 400;
     }
 }
@@ -518,7 +531,7 @@ p {
 }
 
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
     .order {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg.images/people-office_tab@1x.png');
     }
@@ -531,7 +544,7 @@ p {
         }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
     .order {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg.images/people-office_desk@1x.png');
     }
@@ -612,6 +625,7 @@ p {
 
 .about-list {
     --items: 1;
+    row-gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -794,7 +808,7 @@ p {
 
 @media screen and (min-width: 1200px) {
     .customers {
-        padding: 130px 0 120px;
+        padding: 120px 0 120px;
     }
 }
 
@@ -1067,6 +1081,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     margin-bottom: 72px;
 }
@@ -1080,7 +1095,7 @@ p {
 
 @media screen and (min-width: 1200px) {
     .footer-box {
-        padding-right: 100px;
+        padding-right: 90px;
         margin-bottom: 0;
     }
 }
@@ -1149,7 +1164,7 @@ p {
 
 @media screen and (min-width: 1200px) {
     .footer-social {
-        padding-right: 80px;
+        padding-right: 70px;
 
     }
 }
@@ -1190,11 +1205,10 @@ p {
 .sub-email {}
 
 .sub-footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     
-   
+    display: inline-block;
+    width: 100%;
+    max-width: 398px;
     
 }
 
@@ -1210,17 +1224,30 @@ p {
 @media screen and (min-width: 1200px) {
     .sub-footer {
         align-items: left;
-        gap: 24px;
+        gap: 17px;
     }
 }
 .box-footer {
     
-    
+    text-align: center;
     
 }
+@media screen and (min-width: 768px) {
+    .box-footer {
+        
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    .box-footer {
+        
+    }
+}
 .footer-input {
-    min-width: 290px;
+    
+    min-width: 280px;
+    width: 100%;
+    
     height: 40px;
     outline: none;
     background-color: #2E2F42;
@@ -1509,12 +1536,10 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    padding-top: 80px;
-    padding-right: 37px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding: 80px 40px 40px;
+    overflow: auto;
     background-color: var(--white-color);
     z-index: 999;
 
@@ -1548,8 +1573,15 @@ p {
 
 .contact-mobile-item {}
 
-.mobile-menu-item {
+.mobile-menu-item:last-child {
+    margin-bottom: 284px;
+}
+.mobile-menu-item:nth-child(-n + 2) {
     margin-bottom: 40px;
+} 
+
+.mobile-menu-item {
+    /* margin-bottom: 40px; */
 }
 
 .mobile-menu-link {
@@ -1562,7 +1594,7 @@ p {
     text-transform: capitalize;
     color: var(--dark-color);
 
-    padding: 10px;
+    
 }
 
 .mobile-menu-link:hover,
@@ -1579,14 +1611,14 @@ p {
 }
 
 .contact-mobile-item:first-child {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .contact-mobile-link {
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 36px;
-    line-height: calc(40px / 36px);
+    line-height: calc(40 / 36);
     color: var(--brand-color);
 }
 
