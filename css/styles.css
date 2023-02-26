@@ -518,7 +518,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 1440px;
+    
 
     /* phone screen */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg.images/people-office_mob@1x.png');
