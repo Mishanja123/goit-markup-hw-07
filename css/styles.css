@@ -62,8 +62,8 @@ p {
     margin-left: auto;
     margin-right: auto;
 
-    /* outline: 2px solid red;
-    outline-offset: -2px; */
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -241,11 +241,12 @@ p {
 
 @media screen and (min-width: 1200px) {
     .header {
-
+      
     }
 }
 
 .header-container {
+    
     display: flex;
     align-items: center;
 
@@ -496,6 +497,7 @@ p {
 /*Order*/
 
 .order {
+    
     padding: 112px 0;
     margin-right: auto;
     margin-left: auto;
